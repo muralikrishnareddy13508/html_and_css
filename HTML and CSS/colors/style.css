@@ -1,0 +1,15 @@
+body{
+    background-color: slategray;
+}
+#para1{
+    color: tomato;
+}
+#para2{
+    color: rgb(102, 222, 225);
+}
+#para3{
+    color: #59ff5f;
+}
+#para4{
+    color: hsl(265, 67%, 58%);
+}

@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+}
+/*#para1{
+    color: tomato;
+}
+#para2{
+    color: aqua;
+}
+#para3{
+    color: deeppink;
+}
+#para4{
+    color: forestgreen;
+}*/ /*for id*/
+
+.odd{
+    color: aqua;
+}
+.even{
+    color: deeppink;
+}

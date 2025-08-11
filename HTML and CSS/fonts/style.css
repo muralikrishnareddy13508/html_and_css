@@ -1,0 +1,16 @@
+@font-face {
+    src: url(enchantmentRegular.ttf);
+    font-family: enchantmentRegular;
+}
+
+h1{
+    font-family: verdana,sans-serif,Arial;
+}
+
+p{
+    font-family: enchantmentRegular, "Lucida Calligraphy", "Courier New", sans-serif;
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-style: normal;
+
+}

@@ -1,0 +1,206 @@
+HTML = Hyper-text Markup Language
+CSS = Cascading Style Sheets
+
+imagine this:
+you are building a house HTML is the foundation, the skeletal structure to support all content on a website.
+CSS would be the decoration, design, and colors of the interior
+
+HTML:
+<!DOCTYPE html> ---> this is a declaration of this file is an html5 document.
+<html lang="en"> ---> Declares that the primary language of the HTML document is English (represented by the code "en").
+<html> </html> ---> the pair of html tags represents the root element of an HTML page.
+<head> </head> ---> the head tags contain info about your webpage.
+<meta charset="UTF-8"> ---> Declares that the character encoding of the HTML document is UTF-8 (Unicode Transformation Format 8-bit).
+                            Tells the browser how to interpret the text content of the page,
+                            ensuring that special characters, symbols, and characters from different languages display correctly
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> ---> Forces Internet Explorer to render the page in the highest available mode
+<meta name="viewport" content="width=device=width, initial-scale=1"> ---> controls how a webpage is displayed on mobile devices
+<link> ---> used to define the link between current doc and an external source
+<link rel=""> ---> used to specify the link between current doc and the external source
+<title> </title> --> sets the title of the webpage.
+<body> </body> --> contains visible content in your webpage.
+<h1> </h1> ----> header tags used for headings
+<p> </p> ------> p tags used for paragraphs and texts
+Text formatters ---> <b> </b> = bold
+                     <i> </i> = italic
+                     <u> </u> = underline
+                     <del> </del> = crossed off text
+                     <big> </big> = big text
+                     <small> </small> = small text
+                     <sub> </sub> = subscript
+                     <sup> </sup> = superscript
+                     <tt> </tt> = monospaced
+                     <mark> </mark> = highlighted text
+<a href=""> </a> ------> a tags used for hyperlinks. 'Href' means hyperlink reference
+target="_blank" ---> to open a hyperlink in a new window or tab.
+Title -----> shows some text when hovered over a hyper link.
+<img src=""> -----> to show an image. Src is source. These can be turned into hyperlinks.
+alt ---------> alternative text for the image.
+Height, width ----> sets the height and width of the image.
+<br> ----------> (self closing tag) line break.
+<hr> ----------> (self closing tag) horizontal rule adds a line in horizontally.
+<pre> </pre> ---> preformatted text. This displays the paragraph in the browser how you have entered it in the code.
+<audio> </audio> --> to play audio files.
+<audio controls autoplay muted loop> ---> controls adds controls like pausePlay button, mute button, and three dots button.
+                                          Autoplay for playing the music automatically.
+                                          Muted is to set the initial audio to be muted.
+                                          Loop is to set the audio in loop.
+<source src=""> --->source of the file like file location.
+type="" -----> to let the browser know the type of the file.
+<video src=""> ---> file location of the video.
+<span> ---> inline container to group elements for styling purposes.
+<div> ---> block container to group elements for styling purposes.
+<ul> </ul> ---> Unordered lists.
+<ol> </ol> ---> ordered lists.
+<dl> </dl> ---> descriptive lists --> <dt> </dt> -> description title.
+                                      <dd> >/dd> -> description details (i think).
+<li> </li> ----> list item.
+<table> </table> ---> to create tables..
+<tr> </tr> ----> table row
+<th> </th> ----> to create table row objects.
+<button> </button> ---> creates a button.
+<script> </script> ---> to add javascript.
+style="" ----> to add css properties.
+<form> </form> ----> to create a form.
+<form action="" method="" enctype=""> ----> action="" --> form sending location.
+                                 method="POST" --> to send confidential info type shit.
+                                 method="GET" ---> to send normal info.
+                                 enctype="" ----> simply means 'encryption type.' It chops down big pieces of files and uploads to the server.
+                                                  (if you don't understand, read the next like hope you understand)
+                                                  It controls how form data is encoded and sent to the server based on the type of data being submitted.
+<input> ---> creates an input box ----> id="" ----> nickname type thingy. Associating something with a name.
+                                        type="" ---> for the type of the input box. (attributes are used in respective positions not suitable for all)
+                                                     For like passwords, telephone nums, username, and other.
+                                            minlength="" ---> minimum length that a user needs to type in.
+                                            maxlength="" ---> maximum length that a user could type.
+                                            placeholder="" ---> example text in the input box.
+                                            pattern="" ----> to set the pattern the input should be in.
+                                            value="" ----> represents the data sent to the server when the corresponding radio button or checkbox is selected.
+                                            name="" ---> assigns a unique identifier to an input field or a group of related fields (e.g., radio buttons).
+                                            rows="" ---> defines the rows for a comment box
+                                            cols="" ---> defines the columns for a comment box
+                                            accept="" ----> to specify the types of files that are allowed to be selected by the user in a file input.
+                                        required ---> makes it so that the user cannot move on without doing anything that is instructed.
+<select> </select> , <option> </option> ----> inside the dropdown menu created by <select>, we need to add choices or items to choose from. Each choice is made with the <option> tag.
+<label> </label> ---> to create a label for the textbox.
+ For="" ---> refers to an id.
+<textarea> </textarea> ---> used to create a multi-line text input field like comments.
+<header> </header> ----> used to contain introductory content, navigation links, or branding elements of a webpage or a specific section. It makes the use of CSS easier.
+<main> </main> ----> It holds the core information or functionality of the webpage, such as articles, blog posts, images, or interactive elements.
+<footer> </footer> ----> used to contain information about the page's authorship, copyrights, or extra navigational links. It makes the use of CSS easier.
+&copy ----> creates a copyright symbol.
+
+
+
+CSS:
+Inline CSS ----> this type is written in the tags of the HTML file
+Internal CSS ----> this type is written within the tags of <style> </style>
+External CSS ----> this type is written in a style sheet. can be applied to more than one HTML file.
+'#' ----> refers to id.
+'.' ----> refers to class.
+'*' ----> refers to everything in the HTML file.
+@font-face ----> used to define custom fonts that can then be used throughout a webpage.
+font-family ----> specifies the name of the custom font. this name later can be used in the CSS code to apply the font.
+font-weight ----> Specifies the thickness of the font
+font-style ----> Specifies if the font is italic, normal, etc.
+unicode-range ----> Limits the range of Unicode characters the font will support.
+url="" ---->
+border ----> to set the border
+    border-style ----> 1. solid, 2. dotted, 3. dashed, 4.double, 5. groove, 6. inset, 7. outset, 8. none.
+    border-width ----> to set the width of the border.
+    border-bottom ----> to set the bottom border.
+    border-top ----> to set the top border.
+    border-left ----> to set the left border.
+    border-right ----> to set the right border.
+margins ----> space around an element.
+    margin ----> to set margin around anything.
+    margin-top, margin-bottom, margin-left, margin-right ----> 1. to set margin on top, 2. to set margin on bottom, 3. to set margin on the left, 4. to set margin on right,
+    margin: auto ----> centers the element in the webpage. use auto in the margin-left to make the element stick to the right side of the webpage.
+float ----> used to position an element to the left or right of its container, allowing other content like texts, to flow around it.
+overflow ----> property that sets the desired behavior when content does not fit in the parent element box(overflows)
+                   overflow: visible
+                   overflow: hidden
+                   overflow: clip
+                   overflow: scroll
+                   overflow: auto
+display: flow-root ----> creates a new 'block formatting context' (BFC). used to fix layout issues, such as parents collapsing when their children are floated.
+display ----> property specifies if/how an element is displayed.
+    block-level ----> start on a new line, take up the full width available.
+    inline ----> does not start in a new line,width is limited to what is needed.
+    display: block ----> makes anything into a block type.
+    display: inline-block ----> makes anything into a block type and stays inline without taking up the full width.
+    display: none ----> won't display the thing you entered this property to. as if it doesn't exist.
+    visibility: hidden ----> won't display the thing you entered this property to, but it will take the space it needed.
+max-width, min-width ----> max-width is the max width the box or something can be.
+                           min-width is the min width the box or something should be.
+max-height, min-width ----> same as width.
+box-sizing ----> used to define how the total width and height of an element are calculated.
+position ----> relative = positioned relative to where it normally.
+               fixed = positioned relative to the viewport.
+               absolute = positioned relative to nearest ancestor.
+               sticky = positioned based on scroll position.
+               static = default position for an element.
+background ----> background can be customizable with these ---> -image, -repeat, -position, -attachment, -size.
+combinators ----> explains the relationship between listed selectors
+                  *space* = descendent.
+                  > = child.
+                  ~ = general sibling.
+                  + = adjacent sibling.
+                  *all children are descendents, not all descendents are children.
+                  *General siblings are elements that share the same parent element.
+                  *An adjacent sibling is an element that comes immediately after a specified element and shares the same parent.
+pseudo-classes ----> :link ---> set properties of the link when it is in the initial state.
+                     :hover ---> set properties of an element when you hover on it.
+                     :active ---> set properties of an element when it is active. like when you click on it.
+                     :visited ---> set properties of an element like links when you have already visited it.
+                     :not() ---> set properties of an element when some other pseudo-class does not happen.
+                     :nth-child() ---> set properties of list elements at a certain list item. when you want to highlight the multiples of some number, use 'n' beside the number.
+pseudo-elements ----> keyword added after a selector that's used to style a specific part of an element.
+                      ex = selector::pseudo-element.
+                      some pseudo-elements are:
+                        ::first-letter
+                        ::first-line
+                        ::selection
+                        ::before
+                        ::after
+                        ::marker
+pagination ----> method by which a document is separated into pages, and numbers are given.
+semantic tags ----> keeps your content organized.
+                    better for SEO.
+                    helps screen readers and other techs for accessibility.
+                         <header> = introductory content.
+                         <nav> = navigation bar, links.
+                         <main> = main content (section, aside, article, div).
+                         <section> = dependent content.
+                         <aside> = side content.
+                         <article> = independent content.
+                         <footer> = closing content.
+clear = used to specify which sides (left, right, or both) elements should NOT have floating content beside them.
+@media screen and (max-width: 600px) ----> changes the CSS properties when the screen width is less than 600 px.
+display: flex ----> allows you to easily design flexible and responsive layouts.
+                    flex-direction ----> Determines the main axis and the direction in which the flex items are laid out.
+                                         Values: row(default), row-reverse, column, column-reverse.
+                    flex-wrap --->Defines whether flex items wrap onto multiple lines or stay in a single line.
+                                  Values: nowrap(default), wrap, wrap-reverse.
+                    justify-content ----> Aligns flex items horizontally.
+                                          Values: flex-start, flex-end, center, space-between, space-around, space-evenly.
+                    align-items ----> Aligns flex items vertically.
+                                      Values: stretch(default), flex-start, flex-end, center, baseline.
+                    align-content ----> Aligns rows/columns along the cross-axis.
+                    align-self ----> used to override the alignment of a specific flex item along the cross-axis.
+transform: ----> used to apply various transformations to an element, such as translating (moving), rotating, scaling, or skewing elements in either 2D or 3D space.
+                 TranslateX(), TranslateY(), Translate() ----> Moves the element by an offset (either horizontally, vertically, or both).
+                 RotateX(), RotateY(), RotateZ() ----> 1. Rotates the element by an angle.
+                 ScaleX(), ScaleY(), Scale() ----> Resizes the element by stretching or shrinking it.
+                 SkewX(), SkewY(), Skew() ----> Skews (tilts) the element along the X or Y axis.
+@keyframes ----> used to define animations. points in time are defined using percentages (e.g., 0%, 50%, 100%) or the keywords from (same as 0%) and (same as 100%) to (same as 100%).
+animation-name: ---> the name that is defined in the @keyframes.
+animation-duration: ----> time you want the animation to play.
+animation-iteration-count: ----> how many times you want the animation to play.
+animation-direction: ----> the direction you want the animation to play.
+animation-play-state: ----> you can pause or start an animation better used with JavaScript.
+animation-timing-function: ----> speed curve thingy. like, you can control the animation.
+                                 try this you will understand: 'cubic-bezier(0,-0.21, 0, 1.11);'.
+
+
+
